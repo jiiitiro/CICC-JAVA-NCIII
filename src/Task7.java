@@ -44,7 +44,7 @@ public class Task7 {
                 return sc.nextDouble();
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input! Please enter a valid numerical value.");
-                sc.next(); // Clear the invalid input buffer
+                sc.next();
             }
         }
     }
