@@ -12,6 +12,18 @@ public class Task15 {
             System.out.printf("Area: %.2f%n", s.calculateArea());
             System.out.printf("Perimeter: %.2f%n\n", s.calculatePerimeter());
         });
+
+        // non-lambda version
+//        Circle circle = new Circle("Red", 5);
+//        Rectangle rectangle = new Rectangle("Blue", 4, 6);
+//
+//        System.out.println("Circle (" + circle.color + ")");
+//        System.out.printf("Area: %.2f%n", circle.calculateArea());
+//        System.out.printf("Perimeter: %.2f%n", circle.calculatePerimeter());
+//
+//        System.out.println("Rectangle (" + rectangle.color + ")");
+//        System.out.printf("Area: %.2f%n", rectangle.calculateArea());
+//        System.out.printf("Perimeter: %.2f%n", rectangle.calculatePerimeter());
     }
 }
 
