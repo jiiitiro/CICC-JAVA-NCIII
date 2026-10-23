@@ -13,17 +13,15 @@ public class Task7 {
             double num1 = getValidDouble(sc, "Enter first number: ");
             double num2 = getValidDouble(sc, "Enter second number: ");
 
-            Arithmetic calc = new Arithmetic(num1, num2);
-
             System.out.println("\n--- Results ---");
-            System.out.println("Addition (+): " + calc.add());
-            System.out.println("Subtraction (-): " + calc.sub());
-            System.out.println("Multiplication (*): " + calc.multi());
+            System.out.println("Addition (+): " + ((Arithmetic) (a, b) -> a + b).calculate(num1, num2));
+            System.out.println("Subtraction (-): " + ((Arithmetic) (a, b) -> a - b).calculate(num1, num2));
+            System.out.println("Multiplication (*): " + ((Arithmetic) (a, b) -> a * b).calculate(num1, num2));
 
             if (num2 == 0) {
                 System.out.println("Division (/): Error - Division by zero is undefined.");
             } else {
-                System.out.println("Division (/): " + calc.div());
+                System.out.println("Division (/): " + ((Arithmetic) (a, b) -> a / b).calculate(num1, num2));
             }
 
             System.out.print("\nDo you want to perform another calculation? (Y/N): ");
@@ -50,28 +48,6 @@ public class Task7 {
     }
 }
 
-class Arithmetic {
-    double num1;
-    double num2;
-
-    public Arithmetic(double num1, double num2) {
-        this.num1 = num1;
-        this.num2 = num2;
-    }
-
-    public double add() {
-        return this.num1 + this.num2;
-    }
-
-    public double sub() {
-        return this.num1 - this.num2; // Fixed logic bug (was addition)
-    }
-
-    public double multi() {
-        return this.num1 * this.num2;
-    }
-
-    public double div() {
-        return this.num1 / this.num2;
-    }
+interface Arithmetic {
+    public double calculate(double num1, double num2);
 }

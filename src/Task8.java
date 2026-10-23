@@ -15,7 +15,6 @@ public class Task8 {
 
             totalSum += paramSum;
         }
-
         return totalSum;
     }
 
