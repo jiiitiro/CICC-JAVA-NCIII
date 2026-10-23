@@ -47,6 +47,38 @@ public class Task8 {
         }
 
         sc.close();
+
+        // lambda version (needs: import java.util.Arrays; import java.util.function.IntUnaryOperator; import java.util.stream.IntStream;)
+//        IntUnaryOperator sumTo = num -> IntStream.rangeClosed(1, num).sum();
+//
+//        Scanner sc = new Scanner(System.in);
+//        boolean repeat = true;
+//
+//        while (repeat) {
+//            System.out.println("\n=== Cumulative Sum Calculator ===");
+//
+//            int count = getValidPositiveInt(sc, "How many parameters do you want to enter? ");
+//            int[] inputs = IntStream.rangeClosed(1, count)
+//                    .map(i -> getValidPositiveInt(sc, "Enter integer #" + i + ": "))
+//                    .toArray();
+//
+//            System.out.println("\n--- Results ---");
+//            Arrays.stream(inputs).forEach(num ->
+//                    System.out.println("Cumulative sum for parameter " + num + " = " + sumTo.applyAsInt(num)));
+//            int total = Arrays.stream(inputs).map(sumTo).sum();
+//
+//            System.out.println("---------------------------------");
+//            System.out.println("Total sum of all parameters = " + total);
+//
+//            System.out.print("\nDo you want to run another calculation? (Y/N): ");
+//            String choice = sc.next();
+//            if (!choice.equalsIgnoreCase("Y")) {
+//                repeat = false;
+//                System.out.println("Program terminated. Goodbye!");
+//            }
+//        }
+//
+//        sc.close();
     }
 
     private static int getValidPositiveInt(Scanner sc, String prompt) {

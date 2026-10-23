@@ -18,5 +18,20 @@ public class Task4 {
             System.out.println("End");
         }
 
+        // lambda version (needs: import java.util.function.Predicate;)
+//        Predicate<String> isPalindrome = s -> s.contentEquals(new StringBuilder(s).reverse());
+//
+//        try (Scanner sc = new Scanner(System.in)) {
+//            do {
+//                System.out.print("Input a string: ");
+//                String input = sc.nextLine();
+//
+//                System.out.println("The input string is " + (isPalindrome.test(input) ? "" : "not ") + "palindrome.");
+//
+//                System.out.print("Run again? y: ");
+//            } while (sc.nextLine().trim().equalsIgnoreCase("y"));
+//
+//            System.out.println("End");
+//        }
     }
 }

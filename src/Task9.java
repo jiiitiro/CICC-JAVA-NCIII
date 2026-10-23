@@ -65,6 +65,47 @@ public class Task9 {
         }
 
         sc.close();
+
+        // lambda version (needs: import java.util.LinkedHashMap; import java.util.Map; import java.util.function.DoubleBinaryOperator; import java.util.function.IntBinaryOperator;)
+//        Map<String, IntBinaryOperator> operations = new LinkedHashMap<>();
+//        operations.put("Addition", (a, b) -> addExact(a, b));
+//        operations.put("Subtraction", (a, b) -> subtractExact(a, b));
+//        operations.put("Multiplication", (a, b) -> multiplyExact(a, b));
+//        DoubleBinaryOperator division = (a, b) -> a / b;
+//
+//        Scanner sc = new Scanner(System.in);
+//        boolean repeat = true;
+//
+//        while (repeat) {
+//            System.out.println("\n=== Math Operation with Static Import ===");
+//
+//            int firstNum = getValidInt(sc, "Enter first number: ");
+//            int secondNum = getValidInt(sc, "Enter second number: ");
+//
+//            System.out.println("\n--- Calculation with Math Operation ---");
+//            operations.forEach((name, operation) -> {
+//                try {
+//                    System.out.println(name + " of " + firstNum + " and " + secondNum + " : " + operation.applyAsInt(firstNum, secondNum));
+//                } catch (ArithmeticException e) {
+//                    System.out.println(name + ": Error - Result overflows integer range.");
+//                }
+//            });
+//
+//            if (secondNum == 0) {
+//                System.out.println("Division: Error - Division by zero is undefined.");
+//            } else {
+//                System.out.println("Division of " + firstNum + " and " + secondNum + " : " + division.applyAsDouble(firstNum, secondNum));
+//            }
+//
+//            System.out.print("\nDo you want to perform another calculation? (Y/N): ");
+//            String choice = sc.next();
+//            if (!choice.equalsIgnoreCase("Y")) {
+//                repeat = false;
+//                System.out.println("Program terminated. Goodbye!");
+//            }
+//        }
+//
+//        sc.close();
     }
 
     private static int getValidInt(Scanner sc, String prompt) {

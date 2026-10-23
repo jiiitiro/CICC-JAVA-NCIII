@@ -5,6 +5,13 @@ public class Task12 {
             p.scale();
             p.print();
         }
+
+        // lambda version (needs: import java.util.stream.IntStream;)
+//        Point point = new Point(32, 32);
+//        IntStream.range(0, 5).forEach(i -> {
+//            point.scale();
+//            point.print();
+//        });
     }
 }
 class Point {

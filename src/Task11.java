@@ -11,6 +11,18 @@ public class Task11 {
             System.out.println(books[i].toString());
             System.out.println();
         }
+
+        // lambda version (needs: import java.util.List; import java.util.stream.IntStream;)
+//        List<Book> bookList = List.of(
+//                new Book("Java Programming", "John Smith", 2021, 39.99),
+//                new Book("Python Basics", "Jane Doe", 2020, 29.99),
+//                new Book("C++ Essentials", "Michael Johnson", 2019, 49.99));
+//
+//        IntStream.range(0, bookList.size()).forEach(i -> {
+//            System.out.println("Book " + (i + 1) + ":");
+//            System.out.println(bookList.get(i));
+//            System.out.println();
+//        });
     }
 }
 

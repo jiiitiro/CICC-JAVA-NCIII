@@ -17,5 +17,11 @@ public class Task6 {
                 System.out.println(num);
             }
         }
+
+        // lambda version (needs: import java.util.Arrays;) - keep the numbers array above
+//        Arrays.stream(numbers)
+//                .takeWhile(num -> num != 237)
+//                .filter(num -> num % 2 == 0)
+//                .forEach(System.out::println);
     }
 }

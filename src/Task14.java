@@ -6,6 +6,12 @@ public class Task14 {
         C c = new C();
         c.abstractMethod();
         c.concreteMethod();
+
+        // lambda version (needs: import java.util.List;)
+//        List.of(new B(), new C()).forEach(obj -> {
+//            obj.abstractMethod();
+//            obj.concreteMethod();
+//        });
     }
 }
 

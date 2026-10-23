@@ -9,6 +9,13 @@ public class Task10{
         for (Student s : students) {
             s.printFullName();
         }
+
+        // lambda version (needs: import java.util.List;)
+//        List.of(
+//                new Student("Morgan", "Freeman"),
+//                new Student("Brad", "Pitt"),
+//                new Student("Kevin", "Spacey")
+//        ).forEach(Student::printFullName);
     }
 }
 

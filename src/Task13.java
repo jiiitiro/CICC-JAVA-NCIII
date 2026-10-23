@@ -2,6 +2,10 @@ public class Task13 {
     public static void main(String[] args) {
         Car car = new Car("Toyota", "Camry", 2022, 4);
         System.out.println(car.displayDetails());
+
+        // lambda version (needs: import java.util.function.Consumer;)
+//        Consumer<Car> printDetails = c -> System.out.println(c.displayDetails());
+//        printDetails.accept(new Car("Toyota", "Camry", 2022, 4));
     }
 }
 class Vehicle {
